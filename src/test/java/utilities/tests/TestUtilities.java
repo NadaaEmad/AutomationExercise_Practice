@@ -33,7 +33,6 @@ public class TestUtilities {
         accountInfoPage.clickCreateAccountButton();
         accountCreatedPage.clickContinue();
         homePage.logout();
-        homePage.navigateToHomePage();
 
     }
 }

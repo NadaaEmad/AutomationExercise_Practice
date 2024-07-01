@@ -21,9 +21,9 @@ public class AutomationExerciseTests {
 
     @Test
     public void verifyValidLogin(){
-        testUtilities.registerNewAccount();
         homePage.assertOnHomePageText("AutomationExercise");
         homePage.navigateToSignupLoginPage();
+        testUtilities.registerNewAccount();
         signUpLoginPage.assertOnLoginToAccountText("Login to your account");
         signUpLoginPage.enterCorrectEmailAndPassword("nada.emad@gmail.com","Nn@123456");
         signUpLoginPage.clickLoginButton();

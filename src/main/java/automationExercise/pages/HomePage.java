@@ -14,7 +14,6 @@ public class HomePage {
     private final By loggedUserInfoText = By.xpath("(//a)[11]");
     private final By deleteAccountButton = By.xpath("//a[@href=\"/delete_account\"]");
     private final By logoutButton = By.xpath("//a[@href=\"/logout\"]");
-    private final By homePageIcon = By.xpath("(//a[@href=\"/\"])[2]");
 
 
 
@@ -49,11 +48,6 @@ public class HomePage {
     public void clickDeleteAccountButton(){
         driver.findElement(deleteAccountButton).click();
     }
-
-    public void navigateToHomePage(){
-        driver.findElement(homePageIcon).click();
-    }
-
 
 
 
